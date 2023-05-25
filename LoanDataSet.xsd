@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LoanDataSet" targetNamespace="http://tempuri.org/LoanDataSet.xsd" xmlns:mstns="http://tempuri.org/LoanDataSet.xsd" xmlns="http://tempuri.org/LoanDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="LoanConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LoanConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Project2.My.MySettings.GlobalReference.Default.LoanConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vBilEmployeeTableAdapter" GeneratorDataComponentClassName="vBilEmployeeTableAdapter" Name="vBilEmployee" UserDataComponentName="vBilEmployeeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LoanConnectionString (MySettings)" DbObjectName="Loan.dbo.vBilEmployee" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT bil FROM dbo.vBilEmployee</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="bil" DataSetColumn="bil" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LoanDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="LoanDataSet" msprop:Generator_DataSetName="LoanDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vBilEmployee" msprop:Generator_RowEvHandlerName="vBilEmployeeRowChangeEventHandler" msprop:Generator_RowDeletedName="vBilEmployeeRowDeleted" msprop:Generator_RowDeletingName="vBilEmployeeRowDeleting" msprop:Generator_RowEvArgName="vBilEmployeeRowChangeEvent" msprop:Generator_TablePropName="vBilEmployee" msprop:Generator_RowChangedName="vBilEmployeeRowChanged" msprop:Generator_RowChangingName="vBilEmployeeRowChanging" msprop:Generator_TableClassName="vBilEmployeeDataTable" msprop:Generator_RowClassName="vBilEmployeeRow" msprop:Generator_TableVarName="tablevBilEmployee" msprop:Generator_UserTableName="vBilEmployee">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bil" msprop:Generator_ColumnPropNameInRow="bil" msprop:Generator_ColumnPropNameInTable="bilColumn" msprop:Generator_ColumnVarNameInTable="columnbil" msprop:Generator_UserColumnName="bil" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
